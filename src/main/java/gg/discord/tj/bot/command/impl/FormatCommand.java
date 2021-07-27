@@ -21,14 +21,12 @@ public class FormatCommand
 {
 
     @Override
-    public String getName()
-    {
+    public String getName() {
         return "format";
     }
 
     @Override
-    public Collection<String> getAliases()
-    {
+    public Collection<String> getAliases() {
         return List.of("f");
     }
 

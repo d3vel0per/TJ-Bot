@@ -15,14 +15,12 @@ public class TagCommand
     implements Command
 {
     @Override
-    public String getName()
-    {
+    public String getName() {
         return "tag";
     }
 
     @Override
-    public Collection<String> getAliases()
-    {
+    public Collection<String> getAliases() {
         return List.of("t", "?");
     }
 

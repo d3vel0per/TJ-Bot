@@ -1,6 +1,5 @@
 package gg.discord.tj.bot.core;
 
-import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.domain.interaction.InteractionCreateEvent;
 import discord4j.core.event.domain.message.MessageCreateEvent;
 import discord4j.discordjson.json.ApplicationCommandOptionData;
@@ -23,14 +22,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.InputStreamReader;
 import java.net.URL;
-import java.security.CodeSource;
 import java.time.Duration;
 import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
 @SuppressWarnings("ConstantConditions")
 @RequiredArgsConstructor

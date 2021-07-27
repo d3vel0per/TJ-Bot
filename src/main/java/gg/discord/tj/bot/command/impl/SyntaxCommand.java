@@ -16,14 +16,12 @@ public class SyntaxCommand
     implements Command
 {
     @Override
-    public String getName()
-    {
+    public String getName() {
         return "syntax";
     }
 
     @Override
-    public Collection<String> getAliases()
-    {
+    public Collection<String> getAliases() {
         return List.of("s");
     }
 

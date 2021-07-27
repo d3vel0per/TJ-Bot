@@ -23,19 +23,15 @@ import java.util.function.Function;
 import java.util.regex.Pattern;
 
 @Slf4j
-public final class StatisticsService
-{
+public final class StatisticsService {
     private final StatisticsRepository repository = StatisticsRepository.INSTANCE;
     private final static Pattern HELP_CHANNEL_NAME_PATTERN = Pattern.compile("help|review");
     private final static String TAG_FREE_MESSAGE_PATTERN = "^(?![?>]tag free).*$";
 
-    public void init()
-    {
-        try
-        {
+    public void init() {
+        try {
             repository.init();
-        } catch (SQLException throwables)
-        {
+        } catch (SQLException throwables) {
             log.error(throwables.getMessage(), throwables);
         }
     }

@@ -7,15 +7,13 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.concurrent.atomic.AtomicReference;
 
-public enum DatabaseManager
-{
+public enum DatabaseManager {
     INSTANCE;
 
     private final AtomicReference<Connection> connectionRef = new AtomicReference<>();
 
     @SneakyThrows
-    public Connection establishConnection()
-    {
+    public Connection establishConnection() {
         Connection connection = connectionRef.get();
 
         if (connection == null)
@@ -30,8 +28,7 @@ public enum DatabaseManager
     }
 
     @SneakyThrows
-    public void disconnect()
-    {
+    public void disconnect() {
         connectionRef.get().close();
     }
 }

@@ -15,14 +15,12 @@ public class HelpCommand
     private final static CommandRepository COMMAND_REPOSITORY = CommandRepository.INSTANCE;
 
     @Override
-    public String getName()
-    {
+    public String getName() {
         return "help";
     }
 
     @Override
-    public Collection<String> getAliases()
-    {
+    public Collection<String> getAliases() {
         return List.of("h");
     }
 

@@ -25,14 +25,12 @@ public class ProcessCommand implements Command {
     private final static Pattern COMMAND_ARGS_PATTERN = Pattern.compile("^(\\d+)(?:\s+(\\d+))?.*");
 
     @Override
-    public String getName()
-    {
+    public String getName() {
         return "process";
     }
 
     @Override
-    public Collection<String> getAliases()
-    {
+    public Collection<String> getAliases() {
         return List.of("p");
     }
 

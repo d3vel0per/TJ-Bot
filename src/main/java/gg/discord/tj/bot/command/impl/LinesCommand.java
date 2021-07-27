@@ -17,14 +17,12 @@ public class LinesCommand
     implements Command
 {
     @Override
-    public String getName()
-    {
+    public String getName() {
         return "lines";
     }
 
     @Override
-    public Collection<String> getAliases()
-    {
+    public Collection<String> getAliases() {
         return List.of("l");
     }
 
